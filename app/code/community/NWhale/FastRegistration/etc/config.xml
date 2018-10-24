@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author NWhale Team
+ * @copyright Copyright (c) 2018 NWhale (https://www.nwhaletech.com)
+ * @package NWhale_FastRegistration
+ */
+-->
+<config>
+    <modules>
+        <NWhale_FastRegistration>
+            <version>1.0.0</version>
+        </NWhale_FastRegistration>
+    </modules>
+    <global>
+        <helpers>
+            <nwhale_fast_registration>
+                <class>NWhale_FastRegistration_Helper</class>
+            </nwhale_fast_registration>
+        </helpers>
+        <blocks>
+            <nwhale_fast_registration>
+                <class>NWhale_FastRegistration_Block</class>
+            </nwhale_fast_registration>
+        </blocks>
+        <models>
+            <nwhale_fast_registration>
+                <class>NWhale_FastRegistration_Model</class>
+            </nwhale_fast_registration>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <customer>
+                <args>
+                    <modules>
+                        <nwhale_fast_registration before="Mage_Customer">NWhale_FastRegistration</nwhale_fast_registration>
+                    </modules>
+                </args>
+            </customer>
+            <checkout>
+                <args>
+                    <modules>
+                        <nwhale_fast_registration before="Mage_Customer">NWhale_FastRegistration</nwhale_fast_registration>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <core_block_abstract_to_html_after>
+                        <class>nwhale_fast_registration/observer</class>
+                        <method>removeExtraFields</method>
+                    </core_block_abstract_to_html_after>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </frontend>
+</config>

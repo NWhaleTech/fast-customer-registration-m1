@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author NWhale Team
+ * @copyright Copyright (c) 2018 NWhale (https://www.nwhaletech.com)
+ * @package NWhale_FastRegistration
+ */
+-->
+<config>
+    <modules>
+        <NWhale_FastRegistration>
+            <active>true</active>
+            <codePool>community</codePool>
+        </NWhale_FastRegistration>
+    </modules>
+</config>
