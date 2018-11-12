@@ -14,7 +14,8 @@ And a registration form with less fields is certanly better in this case. A simp
 # The benefits of capturing consumer identity are widely know:
 - more accurate, first-party data that can be used to drive conversations and retention by informing more relevant cross-channel experiences. 
 - The buyer also receives significant benefits: saved payment methods,wish-lists, birthday greetings, purchase history and so on
-- 
+
+
 **Do not give a overcomplicated registration form give your customers a chance to change their mind — try NWhale Fast Customer Registration.**
 
 Created by [NWhaleTech](https://nwhaletech.com/)
